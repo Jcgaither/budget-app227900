@@ -30,7 +30,6 @@ def addExpense():
         endbalance = (currentbalance - expensetotal)
         if endbalance <= 0:
             print "Negative balance, insufficient funds to cover expenses"
-            Continue
         elif endbalance <= 100:
             print "Low balance notice: Current balance: %s" % endbalance
             time.sleep(3)
